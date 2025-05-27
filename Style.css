@@ -50,10 +50,74 @@ header h1 {
 
 main {
   padding: 40px 20px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   max-width: 1200px;
   margin: auto;
+}
+
+#sobre {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: justify;
+  font-size: 1.1em;
+  color: #05377b;
+}
+
+#sobre h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#recursos {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: justify;
+  font-size: 1.1em;
+  color: #05377b;
+}
+
+#recursos h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+#contato {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: justify;
+  font-size: 1.1em;
+  color: #05377b;
+}
+
+#contato h2 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.leia-mais {
+  display: inline-block;
+  margin-top: 7px;
+  color: #fff;
+  background: #05377b;
+  border-color: #fff;
+  padding: 7px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 0.88em;
+  transition: background 0.5s;
+}
+
+.leia-mais a:hover {
+  background: #fff;
+  color: #05377b;
 }
 
 footer {
@@ -62,7 +126,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 footer a {
