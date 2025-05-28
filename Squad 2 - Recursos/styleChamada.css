@@ -11,6 +11,7 @@ main {
 .container-chamada {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 0.5rem;
     margin-top: 1rem;
     border: 1px solid black;
@@ -37,16 +38,29 @@ main {
     margin-right: 10px;
 }
 
+.confirmarPresenca #presenca:hover {
+    cursor: pointer;
+}
+
 .cabecalho {
     font-weight: bold;
+}
+
+.botaoEnviar{
+    display: flex;
+    justify-content: center;
 }
 
 #enviarChamada {
     background-color: #05377B; 
     color: white;
     padding: 10px;
-    width: 20%;
+    width: 40%;
     border-color: white;
     border-radius: 10px;
-    align-self: center;
+}
+
+#enviarChamada:hover {
+    transform: scale(1.04);
+    cursor: pointer;
 }
