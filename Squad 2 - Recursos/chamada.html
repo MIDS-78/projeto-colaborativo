@@ -1,46 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Chamada</title>
-    <link rel="stylesheet" href="./styleChamada.css"/>
+    <title>Chamada</title>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    <div class="headerChamada">
-    <h1>Lista de Chamada</h1>
-    <h3>Turma MIDS 78: Desenvolvimento de Sistemas</h3>
-    <h3>2025</h3>
-    </div>
 
-    </body>
+    <main>
+        <h1>Lista de chamada</h1>
+        <h3>Turma MIDS 78</h3>
 
-    <div class="chamada">
-        <ul>
-            <li>Amanda Salvador</li>
-            <li>Bruno Luis Medeiros</li>
-            <li>Daniel Müller</li>
-            <li>Eduarda Ferraza Stein</li>
-            <li>Gustavo da Silva</li>
-            <li>Gustavo Rafael Kotryk</li>
-            <li>Heloisa Almeida Ferreira</li>
-            <li>Igor Tayson Bresolin Savero</li>
-            <li>Jonathan Luis Uber</li>
-            <li>Kauã Felix da Silva Costa</li>
-            <li>Letícia Emanuele Güths</li>
-            <li>Lorhan Pierre de Melo</li>
-            <li>Lucas Ismael Eckert</li>
-            <li>Luiz Guilherme Fauro Ortiz</li>
-            <li>Mateus Morsch</li>
-            <li>Matheus Engel</li>
-            <li>Nícollas Gabriel Bartko de França</li>
-            <li>Pablo Ruan Tzeliks</li>
-            <li>Sara Soares dos Santos</li>
-            <li>Victor Daniel Strelow</li>
-            <li>Victória Nicoladelli</li>
-            <li>Vinícius de Figueiredo Anacleto</li>
-            <li>Vinicius dos Santos Zapella</li>
-        </ul>
-    </div>
+        <div class="container-chamada">
+
+            <div class="cabecalho">
+                <h3>Alunos</h3>
+            <div>
+                
+            <form method="post" class="alunos">
+                <div class="aluno">
+                    <h4>Lucas Ismael Eckert</h3>
+                    <div class="confirmarPresenca">
+                        <label for="presenca">Presente</label>
+                        <input type="checkbox" id="presenca" name="presenca" value="presenca">
+                    </div>            
+                        
+                </div>
+
+                <div class="aluno">
+                    <h4>Lucas Ismael Eckert</h3>
+                    <div class="confirmarPresenca">
+                        <label for="presenca">Presente</label>
+                        <input type="checkbox" id="presenca" name="presenca" value="presenca">
+                    </div>            
+                        
+                </div>
+
+                <div class="aluno">
+                    <h4>Lucas Ismael Eckert</h3>
+                    <div class="confirmarPresenca">
+                        <label for="presenca">Presente</label>
+                        <input type="checkbox" id="presenca" name="presenca" value="presenca">
+                    </div>            
+                        
+                </div>
+
+                <input type="submit" value="Enviar" id="enviarChamada">
+    
+            </form>
+
+            
+            
+        </div>
+    </main>
+    
 </body>
 </html>
