@@ -4,30 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos de Uso</title>
-    <link rel="shortcut icon" href="../icone.ico" type="image/x-icon">
+    <title>Contato</title>
+    
     <link rel="stylesheet" href="StyleContato.css">
 </head>
 
 <body>
     <header>
-        <a href="../index.html">
-            <h1><strong>MIDS 78</strong></h1>
-        </a>
-        <div class="navbar">
-            <a href="../#"><strong>Início</strong></a>
-            <a href="../#sobre"><strong>Sobre Nós</strong></a>
-            <a href="../#recursos"><strong>Recursos</strong></a>
-            <a href="../#contato"><strong>Contato</strong></a>
-        </div>
-    </header>
-    
     <div>
         <h1><strong>Informações para Contato</strong></h1>
     </div>
-
+    <br>
+</header>
     <div>
-        <li>Email: contato@mids78.com</li>
+        <li>Email: turmamids78@gmail.com</li>
         <li>Telefone: (47) 914082478</li>
         <li>GitHub: @turmamids78</li>
         <li>Instagram: @turmamids78</li>
@@ -39,46 +29,31 @@
     </div>
 
     <div class="formulario">
-    <form>
-        <input name="Nome" autocomplete="off" required />
-        <label for="Nome">
-          <span>Nome</span>
-        </label>
-      </form>
-
-    <form>
-    <form>
-        <input name="E-mail" autocomplete="off" required />
-        <label for="E-mail">
-         <span>E-mail</span>
-      </label>
-     </form>
+    <form action="https://formspree.io/f/mldbqape" method="POST">
     
-     <form>
-        <div>
-            <input class="nome" type="text" id="Nome" name="Nome" placeholder="Digite seu nome">
+         <div class inputEmail>
+            <input name="E-mail" autocomplete="off" required />
+            <label for="E-mail">
+                <span>E-mail</span>
+            </label>
         </div>
+
+      <br>
+
+    <div class inputMensagem>
+        <input name="Mensagem" autocomplete="off" required />
+        <label for="Mensagem">
+         <span>Mensagem</span>
+        </label>
+    </div>
 
         <br>
 
         <div>
-            <input class="email" type="text" id="email" name="email" placeholder="Digite seu email">
-        </div>
-
-        <br>
-
-        <div>
-            <input class="mensagem" type="text" id="Mensagem" name="Mensagem" placeholder="Digite sua mensagem">
-        </div>
-
-        <br>
-
-        <div>
-            <button class="botao">enviar</button>
+            <button type ="botao">enviar</button>
         </div>
     </form>
     </div>
-
 </body>
 
 </html>
