@@ -5,6 +5,7 @@ MIDS78-00 feat: Criando diretórios e arquivos (esqueleto)
 MIDS78-01 - Adicionar descrição fictícia do projeto
 MIDS78-02 - Criar parágrafo explicando o objetivo da aplicação
 MIDS78-03 - Estilizar a seção com título destacado (usar HTML básico)
+MIDS78-15 - Atualiza o header e footer da nossa página e arruma os href da pagina principal
 
 ## Squad 2 - Lucas: Seção Recursos (Lider 2)
 MIDS78-04 - Trocar os itens da lista por recursos reais (ex: formulário, galeria, mapa)
