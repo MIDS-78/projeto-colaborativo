@@ -1,0 +1,192 @@
+body {
+    font-family: "Inter", sans-serif;
+    padding: 1rem;
+    background-color: #ffffff; 
+}
+
+header {
+    background-color: #05377b;
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+header img {
+    height: 70px;
+    border-radius: 50%;
+}
+  
+.navbar {
+    display: flex;
+    gap: 25px;
+}
+  
+.navbar a {
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+  
+.navbar a:hover {
+    background-color: #022d64;
+    transform: scale(1.05);
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #05377B; 
+}
+
+main h1{
+    font-size: 40px;
+    color: #05377B; 
+}
+
+.container-chamada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    border: 2px solid #05377B; 
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #e7edf8; 
+    margin-bottom: 40px;
+}
+
+.aluno {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border: 1px solid #05377B; 
+    border-radius: 10px;
+    align-items: baseline;
+    margin-bottom: 2%;
+    align-items: center;
+    background-color: #ffffff; 
+}
+
+.aluno h4 {
+    margin-left: 10px;
+    color: #05377B; 
+    align-self: center;
+}
+
+.numero-aluno {
+    justify-content: start;
+    display: flex;
+    flex-direction: row;
+}
+
+.numero {
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-color: #05377B;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    accent-color: green;
+}
+
+.confirmarPresenca {
+    margin-right: 10px;
+}
+
+.confirmarPresenca #presenca:hover {
+    cursor: pointer;
+    color: #05377B; 
+}
+
+.cabecalho {
+    font-weight: bold;
+    color: #05377B; 
+}
+
+.botaoEnviar{
+    display: flex;
+    justify-content: center;
+}
+
+#enviarChamada {
+    background-color: #05377B; 
+    color: white;
+    padding: 10px;
+    width: 40%;
+    border-color: white;
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.botaoEnviar a {
+    text-decoration: none;
+    text-align: center;
+}
+
+#enviarChamada:hover {
+    transform: scale(1.04);
+    cursor: pointer;
+    background-color: #05377B; 
+}
+
+.mensagem {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#finalizar:target {
+    display: block;
+    animation: mostrarSumir 3s forwards;
+}
+
+@keyframes mostrarSumir {
+    0%, 80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  footer {
+    background-color: #05377b;
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
