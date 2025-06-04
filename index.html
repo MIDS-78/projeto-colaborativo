@@ -25,7 +25,7 @@
 
   <header>
     <div class="container">
-      <img src="logo.jpg" alt="Logo MIDS78">
+      <img src="imagens/logo.jpg" alt="Logo MIDS78">
       <nav class="navbar">
         <a href="#">Início</a>
         <a href="#sobre">Sobre Nós</a>
@@ -87,24 +87,126 @@
     </div>
   </section>
 
-  <footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="paragrafo">
+    <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de
+      cookies.</p>
+    </div>
+  <div class="botoes">
+    <button onclick="aceitarCookies()">Aceitar</button>
+    <button onclick="recusarCookies()">Recusar</button>
+  </div>
+</div>
+
+  <script>
+    // Função para verificar se o cookie já foi aceito
+    function verificarCookie() {
+      return document.cookie.split(';').some((item) => item.trim().startsWith('cookiesAceitos='));
+    }
+
+    // Função chamada ao clicar em "Aceitar"
+    function aceitarCookies() {
+      const data = new Date();
+      data.setFullYear(data.getFullYear() + 1); // Cookie válido por 1 ano
+      document.cookie = "cookiesAceitos=true; expires=" + data.toUTCString() + "; path=/";
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Função chamada ao clicar em "Recusar"
+    function recusarCookies() {
+      document.cookie = "cookiesAceitos=false; path=/"; // Você pode tratar isso conforme necessário
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Exibe o banner se o cookie ainda não foi aceito
+    window.onload = function () {
+      if (!verificarCookie()) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      } else {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      }
+    };
+  </script>
+
+
+
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="paragrafo">
+    <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de
+      cookies.</p>
+    </div>
+  <div class="botoes">
+    <button onclick="aceitarCookies()">Aceitar</button>
+    <button onclick="recusarCookies()">Recusar</button>
+  </div>
+</div>
+
+  <script>
+    // Função para verificar se o cookie já foi aceito
+    function verificarCookie() {
+      return document.cookie.split(';').some((item) => item.trim().startsWith('cookiesAceitos='));
+    }
+
+    // Função chamada ao clicar em "Aceitar"
+    function aceitarCookies() {
+      const data = new Date();
+      data.setFullYear(data.getFullYear() + 1); // Cookie válido por 1 ano
+      document.cookie = "cookiesAceitos=true; expires=" + data.toUTCString() + "; path=/";
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Função chamada ao clicar em "Recusar"
+    function recusarCookies() {
+      document.cookie = "cookiesAceitos=false; path=/"; // Você pode tratar isso conforme necessário
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Exibe o banner se o cookie ainda não foi aceito
+    window.onload = function () {
+      if (!verificarCookie()) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      } else {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      }
+    };
+  </script>
+
+
+
+  <footer class="footer">
     <div class="footer-container">
-      <div>
-        <h4>Links Úteis</h4>
+      <div class="footer-brand">
+        <img src="/imagens/logo.jpg" alt="Logo MIDS78">
+        <h2>Turma de Desenvolvimento de Sistemas - 2025</h2>
+        <p class="footer-frase">"Não é só um curso, é o começo da nossa história na tecnologia."</p>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Links úteis</h3>
         <ul>
-          <li><a href="#">Início</a></li>
+          <li><a href="#home">Início</a></li>
           <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#valores">Valores</a></li>
+          <li><a href="#projetos">Projetos</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </div>
-      <div>
-        <h4>Contato</h4>
-        <p>Email: turmamids78@gmail.com</p>
+      
+      <div class="footer-social">
+        <h3>Redes sociais</h3>
+        <a href="https://github.com/MIDS-78" target="_blank" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        </a>
+        <a href="#" target="_blank" aria-label="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+        </a>
       </div>
     </div>
-    <p class="footer-frase">"Não é só um curso, é o começo da nossa história na tecnologia."</p>
-    <p class="footer-copy">&copy; 2025 MIDS 78. Todos os direitos reservados. <a href="../Squad 4 - Termos/Termos.html">Termos de Uso</a></p>
+    
+    <div class="footer-bottom">
+      <p>&copy; 2025 MIDS-78 | Todos os direitos reservados<a href="../Squad 4 - Termos/Termos.html"> | Termos de Uso</a></p>
+    </div>
   </footer>
 </body>
 </html>
