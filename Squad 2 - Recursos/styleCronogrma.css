@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,7 +8,6 @@
 body {
     background-color: #ffffff;
     color: #05377B;
-    /* azul escuro */
     padding: 20px;
     line-height: 1.5;
 }
@@ -27,7 +25,7 @@ h1 {
     background-color: #f5faff;
     border: 1px solid #ddd;
     border-radius: 8px;
-    color: #05377B;
+    color: #181C1F;
     font-size: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
@@ -46,7 +44,6 @@ h1 {
     top: 5px;
 }
 
-/* Cabeçalho da tabela */
 .tabela-cronograma thead tr {
     background-color: #05377B;
     color: white;
@@ -55,35 +52,31 @@ h1 {
     font-size: 1.1rem;
 }
 
-/* Células do cabeçalho */
+
 .tabela-cronograma th,
 .tabela-cronograma td {
     padding: 12px 15px;
     border: 1px solid #ddd;
 }
 
-/* Linhas alternadas para melhor leitura */
 .tabela-cronograma tbody tr:nth-child(even) {
     background-color: #f5faff;
 }
 
-/* Coluna horário */
+
 .tabela-cronograma tbody td:first-child {
     font-weight: 600;
     color: #32CD32;
-    /* verde da identidade */
     text-align: center;
     background-color: #e6f2e6;
     white-space: nowrap;
 }
 
-/* Texto dentro das células */
 .tabela-cronograma tbody td {
     text-align: center;
 }
 
 
-/* Responsividade simples */
 @media (max-width: 700px) {
     .tabela-cronograma thead {
         display: none;
@@ -121,8 +114,6 @@ h1 {
         color: #05377B;
     }
 }
-
-/* Hover individual para cada disciplina */
 
 .tabela-cronograma td.descanso:hover {
     background-color: #d4f7d4;
@@ -183,44 +174,45 @@ h1 {
 a {
     text-decoration: none;
     color: inherit;
-  }
-  
-  /* Header */
-  header {
+}
+
+header {
     background-color: #05377b;
     color: #fff;
     padding: 20px 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  .container {
+}
+
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  header img {
+}
+
+header img {
     height: 70px;
     border-radius: 50%;
-  }
-  
-  .navbar {
+}
+
+.navbar {
     display: flex;
     gap: 25px;
-  }
-  
-  .navbar a {
+}
+
+.navbar a {
     color: #fff;
     font-weight: 500;
     padding: 8px 12px;
     border-radius: 6px;
     transition: 0.3s ease;
-  }
-  
-  .navbar a:hover {
+}
+
+.navbar a:hover {
     background-color: #022d64;
     transform: scale(1.05);
-  }
+}
+
+
