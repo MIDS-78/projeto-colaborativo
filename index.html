@@ -87,6 +87,94 @@
     </div>
   </section>
 
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="paragrafo">
+    <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de
+      cookies.</p>
+    </div>
+  <div class="botoes">
+    <button onclick="aceitarCookies()">Aceitar</button>
+    <button onclick="recusarCookies()">Recusar</button>
+  </div>
+</div>
+
+  <script>
+    // Função para verificar se o cookie já foi aceito
+    function verificarCookie() {
+      return document.cookie.split(';').some((item) => item.trim().startsWith('cookiesAceitos='));
+    }
+
+    // Função chamada ao clicar em "Aceitar"
+    function aceitarCookies() {
+      const data = new Date();
+      data.setFullYear(data.getFullYear() + 1); // Cookie válido por 1 ano
+      document.cookie = "cookiesAceitos=true; expires=" + data.toUTCString() + "; path=/";
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Função chamada ao clicar em "Recusar"
+    function recusarCookies() {
+      document.cookie = "cookiesAceitos=false; path=/"; // Você pode tratar isso conforme necessário
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Exibe o banner se o cookie ainda não foi aceito
+    window.onload = function () {
+      if (!verificarCookie()) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      } else {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      }
+    };
+  </script>
+
+
+
+
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="paragrafo">
+    <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de
+      cookies.</p>
+    </div>
+  <div class="botoes">
+    <button onclick="aceitarCookies()">Aceitar</button>
+    <button onclick="recusarCookies()">Recusar</button>
+  </div>
+</div>
+
+  <script>
+    // Função para verificar se o cookie já foi aceito
+    function verificarCookie() {
+      return document.cookie.split(';').some((item) => item.trim().startsWith('cookiesAceitos='));
+    }
+
+    // Função chamada ao clicar em "Aceitar"
+    function aceitarCookies() {
+      const data = new Date();
+      data.setFullYear(data.getFullYear() + 1); // Cookie válido por 1 ano
+      document.cookie = "cookiesAceitos=true; expires=" + data.toUTCString() + "; path=/";
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Função chamada ao clicar em "Recusar"
+    function recusarCookies() {
+      document.cookie = "cookiesAceitos=false; path=/"; // Você pode tratar isso conforme necessário
+      document.getElementById('cookie-banner').style.display = 'none';
+    }
+
+    // Exibe o banner se o cookie ainda não foi aceito
+    window.onload = function () {
+      if (!verificarCookie()) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      } else {
+        document.getElementById('cookie-banner').style.display = 'flex';
+      }
+    };
+  </script>
+
+
+
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-brand">

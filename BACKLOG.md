@@ -23,3 +23,4 @@ MIDS78-11 - Adicionar uma navegação no topo com links internos para cada seç�
 MIDS78-12 - Melhorar o visual do título principal
 MIDS78-13 - Implementar um link interno para a página de "Termos de Uso".
 MIDS78-14 - Desenvolver a página de "Termos de Uso".
+MIDS78-15 - Desenvolver cookies no site.

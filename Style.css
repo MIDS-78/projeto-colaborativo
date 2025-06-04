@@ -196,6 +196,71 @@ section h2 {
   background-color: #022d64;
 }
 
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #05377b;
+  color: #fff;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 999;
+}
+
+.cookie-banner p {
+  margin: 0;
+  max-width: 600px;
+  flex-grow: 1;
+  
+}
+
+.botoes{
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;  
+  gap: 18px;        
+
+}
+
+.botoes button {
+  padding: 8px 22px;   
+  font-size: 16px;     
+  border-radius: 12px;   
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  user-select: none;
+  color: #05377b;
+}
+
+.botoes button:hover {
+  transform: scale(1.05);
+}
+
+.botoes button:active {
+  transform: scale(0.98);
+}
+
+
+.paragrafo{
+  display: flex;
+  align-items: flex-start;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 12px;
+  margin-left:100%;
+}
+
+.cookie-buttons button:hover {
+  background-color: #e0e0e0;
+}
+
+
 /* Rodapé */
 
 .footer {
