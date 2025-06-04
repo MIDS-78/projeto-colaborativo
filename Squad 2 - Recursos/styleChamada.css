@@ -128,17 +128,65 @@ input[type="checkbox"] {
     justify-content: center;
 }
 
-#enviarChamada {
+.enviarChamada {
     background-color: #05377B; 
     color: white;
     padding: 10px;
     width: 40%;
     border-color: white;
     border-radius: 10px;
+    justify-content: center;
 }
 
-#enviarChamada:hover {
+.botaoEnviar a {
+    text-decoration: none;
+    text-align: center;
+}
+
+.enviarChamada:hover {
     transform: scale(1.04);
     cursor: pointer;
     background-color: #05377B; 
 }
+
+.mensagem {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#finalizar:target {
+    display: block;
+    animation: mostrarSumir 3s forwards;
+}
+
+@keyframes mostrarSumir {
+    0%, 80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  footer {
+    background-color: #05377b;
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: underline;
+  }
