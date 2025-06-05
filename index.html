@@ -1,34 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
-  <title>Projeto MIDS 78 - Squads Ágeis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MIDS 78</title>
+  <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
   <link rel="stylesheet" href="Style.css">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+
   <header>
-    <h1>Aplicação da Turma MIDS 78</h1>
-    <p>Este projeto simula um ambiente de colaboração com Git.</p>
+    <div class="container">
+      <img src="logo.jpg" alt="Logo MIDS78">
+      <nav class="navbar">
+        <a href="#">Início</a>
+        <a href="#sobre">Sobre Nós</a>
+        <a href="#recursos">Recursos</a>
+        <a href="#contato">Contato</a>
+        <a href="#valores">Valores</a>
+      </nav>
+    </div>
   </header>
 
+  <section class="hero" data-aos="fade-up">
+    <div class="hero-content">
+      <h1>O FUTURO DA TECNOLOGIA COMEÇA AQUI</h1>
+      <p>Bem-vindo ao blog da turma MIDS-78</p>
+    </div>
+  </section>
+
+  <section class="contadores" data-aos="fade-up">
+    <div class="contador"><h2>+15</h2><p>Projetos realizados</p></div>
+    <div class="contador"><h2>+100</h2><p>Commits realizados</p></div>
+    <div class="contador"><h2>+250</h2><p>Horas de estudo</p></div>
+  </section>
+
   <main>
-    <section id="sobre">
-      <h2>Sobre o Projeto</h2>
-      <p>Esta seção será editada por uma das squads com uma descrição do projeto.</p>
+    <section id="sobre" data-aos="fade-up">
+      <h2>Sobre Nós</h2>
+      <p>Somos a Turma MIDS-78 da WEG. Uma equipe apaixonada por tecnologia e inovação. Durante nossa jornada no curso de Desenvolvimento de Sistemas, aprendemos a programar com Java, HTML, CSS e Git. Mas, acima de tudo, aprendemos a crescer juntos.</p>
+      <a href="./Squad 1 - Sobre/Sobre.html"><button class="leia-mais">Leia mais</button></a>
     </section>
 
-    <section id="recursos">
+    <section id="recursos" data-aos="fade-up">
       <h2>Recursos</h2>
-      <ul>
-        <li>Recurso 1</li>
-        <li>Recurso 2</li>
-      </ul>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro sequi accusantium tempore ut magnam voluptatum cumque corporis commodi dicta modi vel expedita nihil ea esse, rem inventore sed minima.</p>
+      <a href="./Squad 2 - Recursos/Recursos.html"><button class="leia-mais">Leia mais</button></a>
     </section>
 
-    <section id="contato">
+    <section id="contato" data-aos="fade-up">
       <h2>Contato</h2>
-      <p><a href="contatos/formulario.html">Formulário de Contato</a></p>
+      <p>Entre em contato conosco para saber mais sobre o projeto MIDS-78 ou enviar sugestões.</p>
+      <a href="./Squad 3 - Contato/Contato.html"><button class="leia-mais">Leia mais</button></a>
     </section>
   </main>
+
+  <section id="valores" class="cards" data-aos="fade-up">
+    <h2>Nossos Valores</h2>
+    <div class="cards-container">
+      <div class="card">
+        <h3>Colaboração</h3>
+        <p>Trabalhamos em equipe, sempre ajudando uns aos outros.</p>
+      </div>
+      <div class="card">
+        <h3>Inovação</h3>
+        <p>Buscamos soluções criativas para desafios do dia a dia.</p>
+      </div>
+      <div class="card">
+        <h3>Comprometimento</h3>
+        <p>Levamos nossos projetos a sério, com dedicação e foco.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <h4>Links Úteis</h4>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>Email: turmamids78@gmail.com</p>
+      </div>
+    </div>
+    <p class="footer-frase">"Não é só um curso, é o começo da nossa história na tecnologia."</p>
+    <p class="footer-copy">&copy; 2025 MIDS 78. Todos os direitos reservados. <a href="../Squad 4 - Termos/Termos.html">Termos de Uso</a></p>
+  </footer>
 </body>
 </html>
