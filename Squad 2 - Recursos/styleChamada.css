@@ -1,7 +1,8 @@
 body {
     font-family: "Inter", sans-serif;
-    padding: 1rem;
     background-color: #ffffff; 
+    padding: 0px;
+    margin: 0px;
 }
 
 header {
