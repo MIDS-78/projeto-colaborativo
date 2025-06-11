@@ -25,13 +25,20 @@
 
   <header>
     <div class="container">
-      <img src="imagens/logo.jpg" alt="Logo MIDS78">
+      <a href="./index.html"><img src="imagens/logo.jpg" alt="Logo MIDS78"></a>
       <nav class="navbar">
         <a href="#">Início</a>
         <a href="#sobre">Sobre Nós</a>
-        <a href="#recursos">Recursos</a>
         <a href="#contato">Contato</a>
         <a href="#valores">Valores</a>
+        <div class="dropdown">
+          <a href="#recursos">Recursos &#x25BC;</a>
+          <div class="dropdown-content">
+            <a href="#recurso1">Recurso 1</a>
+            <a href="#recurso2">Recurso 2</a>
+            <a href="#recurso3">Recurso 3</a>
+          </div>
+        </div>
       </nav>
     </div>
   </header>
@@ -54,12 +61,6 @@
       <h2>Sobre Nós</h2>
       <p>Somos a Turma MIDS-78 da WEG. Uma equipe apaixonada por tecnologia e inovação. Durante nossa jornada no curso de Desenvolvimento de Sistemas, aprendemos a programar com Java, HTML, CSS e Git. Mas, acima de tudo, aprendemos a crescer juntos.</p>
       <a href="./Squad 1 - Sobre/Sobre.html"><button class="leia-mais">Leia mais</button></a>
-    </section>
-
-    <section id="recursos" data-aos="fade-up">
-      <h2>Recursos</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro sequi accusantium tempore ut magnam voluptatum cumque corporis commodi dicta modi vel expedita nihil ea esse, rem inventore sed minima.</p>
-      <a href="./Squad 2 - Recursos/Recursos.html"><button class="leia-mais">Leia mais</button></a>
     </section>
 
     <section id="contato" data-aos="fade-up">
@@ -87,98 +88,58 @@
     </div>
   </section>
 
-
-  <div id="cookie-banner" class="cookie-banner">
-    <div class="paragrafo">
-    <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de
-      cookies.</p>
-    </div>
-  <div class="botoes">
-    <button onclick="aceitarCookies()">Aceitar</button>
-    <button onclick="recusarCookies()">Recusar</button>
-  </div>
-</div>
-
-  <script>
-    // Função para verificar se o cookie já foi aceito
-    function verificarCookie() {
-      return document.cookie.split(';').some((item) => item.trim().startsWith('cookiesAceitos='));
-    }
-
-    // Função chamada ao clicar em "Aceitar"
-    function aceitarCookies() {
-      const data = new Date();
-      data.setFullYear(data.getFullYear() + 1); // Cookie válido por 1 ano
-      document.cookie = "cookiesAceitos=true; expires=" + data.toUTCString() + "; path=/";
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Função chamada ao clicar em "Recusar"
-    function recusarCookies() {
-      document.cookie = "cookiesAceitos=false; path=/"; // Você pode tratar isso conforme necessário
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Exibe o banner se o cookie ainda não foi aceito
-    window.onload = function () {
-      if (!verificarCookie()) {
-        document.getElementById('cookie-banner').style.display = 'flex';
-      } else {
-        document.getElementById('cookie-banner').style.display = 'flex';
-      }
-    };
-  </script>
-
-
+  <section id="recursos" data-aos="fade-up">
+    <h2>Recursos </h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam porro sequi accusantium tempore ut magnam voluptatum cumque corporis commodi dicta modi vel expedita nihil ea esse, rem inventore sed minima.</p>
+    <a href="./Squad 2 - Recursos/Recursos.html"><button class="leia-mais">Leia mais</button></a>
+  </section>
 
 
   <div id="cookie-banner" class="cookie-banner">
     <div class="paragrafo">
-    <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de
+      <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de
       cookies.</p>
     </div>
-  <div class="botoes">
-    <button onclick="aceitarCookies()">Aceitar</button>
-    <button onclick="recusarCookies()">Recusar</button>
-  </div>
-</div>
+    <div class="botoes">
+      <button onclick="aceitarCookies()">Aceitar</button>
+      <button onclick="recusarCookies()">Recusar</button>
+    </div>
 
-  <script>
-    // Função para verificar se o cookie já foi aceito
-    function verificarCookie() {
-      return document.cookie.split(';').some((item) => item.trim().startsWith('cookiesAceitos='));
-    }
-
-    // Função chamada ao clicar em "Aceitar"
-    function aceitarCookies() {
-      const data = new Date();
-      data.setFullYear(data.getFullYear() + 1); // Cookie válido por 1 ano
-      document.cookie = "cookiesAceitos=true; expires=" + data.toUTCString() + "; path=/";
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Função chamada ao clicar em "Recusar"
-    function recusarCookies() {
-      document.cookie = "cookiesAceitos=false; path=/"; // Você pode tratar isso conforme necessário
-      document.getElementById('cookie-banner').style.display = 'none';
-    }
-
-    // Exibe o banner se o cookie ainda não foi aceito
-    window.onload = function () {
-      if (!verificarCookie()) {
-        document.getElementById('cookie-banner').style.display = 'flex';
-      } else {
-        document.getElementById('cookie-banner').style.display = 'flex';
+    <script>
+      // Função para verificar se o cookie já foi aceito
+      function verificarCookie() {
+        return document.cookie.split(';').some((item) => item.trim().startsWith('cookiesAceitos='));
       }
-    };
-  </script>
 
+      // Função chamada ao clicar em "Aceitar"
+      function aceitarCookies() {
+        const data = new Date();
+        data.setFullYear(data.getFullYear() + 1); // Cookie válido por 1 ano
+        document.cookie = "cookiesAceitos=true; expires=" + data.toUTCString() + "; path=/";
+        document.getElementById('cookie-banner').style.display = 'none';
+      }
 
+      // Função chamada ao clicar em "Recusar"
+      function recusarCookies() {
+        document.cookie = "cookiesAceitos=false; path=/"; // Você pode tratar isso conforme necessário
+        document.getElementById('cookie-banner').style.display = 'none';
+      }
+
+      // Exibe o banner se o cookie ainda não foi aceito
+      window.onload = function () {
+        if (!verificarCookie()) {
+          document.getElementById('cookie-banner').style.display = 'flex';
+        } else {
+          document.getElementById('cookie-banner').style.display = 'flex';
+        }
+      };
+    </script>
+  </div>
 
   <footer class="footer">
     <div class="footer-container">
       <div class="footer-brand">
-        <img src="/imagens/logo.jpg" alt="Logo MIDS78">
+        <img src="./imagens/logo.jpg" alt="Logo MIDS78">
         <h2>Turma de Desenvolvimento de Sistemas - 2025</h2>
         <p class="footer-frase">"Não é só um curso, é o começo da nossa história na tecnologia."</p>
       </div>
@@ -198,7 +159,7 @@
         <a href="https://github.com/MIDS-78" target="_blank" aria-label="GitHub">
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
         </a>
-        <a href="#" target="_blank" aria-label="Instagram">
+        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
           <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
         </a>
       </div>
