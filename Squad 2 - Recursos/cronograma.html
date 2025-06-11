@@ -2,134 +2,135 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronograma</title>
-    <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styleCronogrma.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cronograma</title>
+  <link rel="shortcut icon" href="icone.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styleCronogrma.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap"
-        rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap"
+    rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="header-footer.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="header-footer.css" />
 </head>
 
 <body>
-    <header>
-        <div class="container">
-          <a href="./index.html"><img src="logo.jpg" alt="Logo MIDS78"></a>
-          <nav class="navbar">
-            <a href="#">Início</a>
-            <a href="#sobre">Sobre Nós</a>
-            <a href="#contato">Contato</a>
-            <a href="#valores">Valores</a>
-            <div class="dropdown">
-              <a href="#recursos">Recursos &#x25BC;</a>
-              <div class="dropdown-content">
-                <a href="#recurso1">Recurso 1</a>
-                <a href="#recurso2">Recurso 2</a>
-                <a href="#recurso3">Recurso 3</a>
-              </div>
-            </div>
-          </nav>
+  <header>
+    <div class="container">
+      <a href="./index.html"><img src="logo.jpg" alt="Logo MIDS78"></a>
+      <nav class="navbar">
+        <a href="../index.html">Início</a>
+        <a href="../index.html#sobre">Sobre Nós</a>
+        <a href="../index.html#contato">Contato</a>
+        <a href="../index.html#valores">Valores</a>
+        <div class="dropdown">
+          <a href="#recursos">Recursos &#x25BC;</a>
+          <div class="dropdown-content">
+            <a href="chamada.html">Chamada</a>
+            <a href="cronograma.html">Cronograma</a>
+            <a href="Localizacao.html">Localização</a>
+          </div>
         </div>
-      </header>
+      </nav>
+    </div>
+  </header>
 
-    <h1>Cronograma Semanal</h1>
+  <h1>Cronograma Semanal</h1>
 
-    <table class="tabela-cronograma" border="1" cellspacing="0" cellpadding="8">
-        <thead>
-            <tr>
-                <th>Horário</th>
-                <th>Domingo</th>
-                <th>Segunda</th>
-                <th>Terça</th>
-                <th>Quarta</th>
-                <th>Quinta</th>
-                <th>Sexta</th>
-                <th>Sábado</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>13:40 - 17:00</td>
-                <td class="descanso" data-label="Domingo">Descanso</td>
-                <td class="poo" data-label="Segunda">Programação Orientada a Objetos</td>
-                <td class="iot" data-label="Terça">IOT</td>
-                <td class="matematica" data-label="Quarta">Fundamentos da Matemática</td>
-                <td class="ingles" data-label="Quinta">Inglês Técnico</td>
-                <td class="frontend" data-label="Sexta">Front-End</td>
-                <td class="descanso" data-label="Sábado">Descanso</td>
-            </tr>
-            <tr>
-                <td>18:00 - 22:00</td>
-                <td class="descanso" data-label="Domingo">Descanso</td>
-                <td class="iot" data-label="Segunda">IOT</td>
-                <td class="sistemas" data-label="Terça">Sistemas Operacionais</td>
-                <td class="metodologias" data-label="Quarta">Métodologias Ágeis e Versionamento</td>
-                <td class="frontend" data-label="Quinta">Front-End</td>
-                <td class="poo" data-label="Sexta">Programação Orientada a Objetos</td>
-                <td class="descanso" data-label="Sábado">Descanso</td>
-            </tr>
-        </tbody>
-    </table>
-    <div class="descricoes">
-        <h2>Descrição das Disciplinas</h2>
-        <p><strong>POO (Programação Orientada a Objetos):</strong> Implementação prática de herança e polimorfismo em um
-            sistema simples usando Java.</p>
-        <p><strong>IoT (Internet das Coisas):</strong> Configuração e programação básica de sensores para coleta de
-            dados via Arduino.</p>
-        <p><strong>Matemática:</strong> Resolução de exercícios sobre lógica proposicional e conjuntos para fortalecer o
-            raciocínio lógico.</p>
-        <p><strong>Inglês Técnico:</strong> Leitura e tradução de artigos técnicos relacionados a desenvolvimento de
-            software.</p>
-        <p><strong>Front-End:</strong> Construção do layout inicial de uma página web com HTML e aplicação de estilos
-            básicos em CSS.</p>
-        <p><strong>Sistemas Operacionais:</strong> Estudo dos conceitos de gerenciamento de processos e escalonamento de
-            tarefas.</p>
-        <p><strong>Metodologias:</strong> Simulação de um fluxo ágil usando Scrum, com definição de sprints e papéis.
-        </p>
-        <p><strong>Descanso:</strong> Pausa para alongamentos e relaxamento, para garantir maior concentração no
-            restante do dia.</p>
+  <table class="tabela-cronograma" border="1" cellspacing="0" cellpadding="8">
+    <thead>
+      <tr>
+        <th>Horário</th>
+        <th>Domingo</th>
+        <th>Segunda</th>
+        <th>Terça</th>
+        <th>Quarta</th>
+        <th>Quinta</th>
+        <th>Sexta</th>
+        <th>Sábado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>13:40 - 17:00</td>
+        <td class="descanso" data-label="Domingo">Descanso</td>
+        <td class="poo" data-label="Segunda">Programação Orientada a Objetos</td>
+        <td class="iot" data-label="Terça">IOT</td>
+        <td class="matematica" data-label="Quarta">Fundamentos da Matemática</td>
+        <td class="ingles" data-label="Quinta">Inglês Técnico</td>
+        <td class="frontend" data-label="Sexta">Front-End</td>
+        <td class="descanso" data-label="Sábado">Descanso</td>
+      </tr>
+      <tr>
+        <td>18:00 - 22:00</td>
+        <td class="descanso" data-label="Domingo">Descanso</td>
+        <td class="iot" data-label="Segunda">IOT</td>
+        <td class="sistemas" data-label="Terça">Sistemas Operacionais</td>
+        <td class="metodologias" data-label="Quarta">Métodologias Ágeis e Versionamento</td>
+        <td class="frontend" data-label="Quinta">Front-End</td>
+        <td class="poo" data-label="Sexta">Programação Orientada a Objetos</td>
+        <td class="descanso" data-label="Sábado">Descanso</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="descricoes">
+    <h2>Descrição das Disciplinas</h2>
+    <p><strong>POO (Programação Orientada a Objetos):</strong> Implementação prática de herança e polimorfismo em um
+      sistema simples usando Java.</p>
+    <p><strong>IoT (Internet das Coisas):</strong> Configuração e programação básica de sensores para coleta de
+      dados via Arduino.</p>
+    <p><strong>Matemática:</strong> Resolução de exercícios sobre lógica proposicional e conjuntos para fortalecer o
+      raciocínio lógico.</p>
+    <p><strong>Inglês Técnico:</strong> Leitura e tradução de artigos técnicos relacionados a desenvolvimento de
+      software.</p>
+    <p><strong>Front-End:</strong> Construção do layout inicial de uma página web com HTML e aplicação de estilos
+      básicos em CSS.</p>
+    <p><strong>Sistemas Operacionais:</strong> Estudo dos conceitos de gerenciamento de processos e escalonamento de
+      tarefas.</p>
+    <p><strong>Metodologias:</strong> Simulação de um fluxo ágil usando Scrum, com definição de sprints e papéis.
+    </p>
+    <p><strong>Descanso:</strong> Pausa para alongamentos e relaxamento, para garantir maior concentração no
+      restante do dia.</p>
+  </div>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <img src="logo.jpg" alt="Logo MIDS78">
+        <h2>Turma de Desenvolvimento de Sistemas - 2025</h2>
+        <p class="footer-frase">"Não é só um curso, é o começo da nossa história na tecnologia."</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Links úteis</h3>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h3>Redes sociais</h3>
+        <a href="https://github.com/MIDS-78" target="_blank" aria-label="GitHub">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+        </a>
+        <a href="#" target="_blank" aria-label="Instagram">
+          <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+        </a>
+      </div>
     </div>
 
-
-    <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-brand">
-            <img src="logo.jpg" alt="Logo MIDS78">
-            <h2>Turma de Desenvolvimento de Sistemas - 2025</h2>
-            <p class="footer-frase">"Não é só um curso, é o começo da nossa história na tecnologia."</p>
-          </div>
-          
-          <div class="footer-links">
-            <h3>Links úteis</h3>
-            <ul>
-              <li><a href="#home">Início</a></li>
-              <li><a href="#sobre">Sobre</a></li>
-              <li><a href="#projetos">Projetos</a></li>
-              <li><a href="#contato">Contato</a></li>
-            </ul>
-          </div>
-          
-          <div class="footer-social">
-            <h3>Redes sociais</h3>
-            <a href="https://github.com/MIDS-78" target="_blank" aria-label="GitHub">
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
-            </a>
-            <a href="#" target="_blank" aria-label="Instagram">
-              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
-            </a>
-          </div>
-        </div>
-        
-        <div class="footer-bottom">
-          <p>&copy; 2025 MIDS-78 | Todos os direitos reservados<a href="../Squad 4 - Termos/Termos.html"> | Termos de Uso</a></p>
-        </div>
-      </footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 MIDS-78 | Todos os direitos reservados<a href="../Squad 4 - Termos/Termos.html"> | Termos de
+          Uso</a></p>
+    </div>
+  </footer>
 
 
 </body>
