@@ -11,7 +11,8 @@
   <!-- Fontes -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Sora:wght@600;700&display=swap"
+    rel="stylesheet">
 
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -22,26 +23,25 @@
   <script>
     AOS.init({ duration: 1000 });
   </script>
-
-  <header>
-    <div class="container">
-      <a href="./index.html"><img src="imagens/logo.jpg" alt="Logo MIDS78"></a>
-      <nav class="navbar">
-        <a href="#">Início</a>
-        <a href="#sobre">Sobre Nós</a>
-        <a href="#contato">Contato</a>
-        <a href="#valores">Valores</a>
-        <div class="dropdown">
-          <a href="#recursos">Recursos &#x25BC;</a>
-          <div class="dropdown-content">
-            <a href="./Squad 2 - Recursos/chamada.html">Chamada</a>
-            <a href="./Squad 2 - Recursos/cronograma.html">Cronograma</a>
-            <a href="./Squad 2 - Recursos/Localizacao.html">Localização</a>
+    <header>
+        <div class="container">
+            <a href="./index.html"><img src="../imagens/logo.jpg" alt="Logo MIDS78"></a>
+            <nav class="navbar">
+                <a href="../index.html">Início</a>
+                <a href="../Squad 1 - Sobre/Sobre.html">Sobre Nós</a>
+                <a href="../Squad 3 - Contato/Contato.html">Contato</a>
+                <a href="../index.html#valores">Valores</a>
+                <div class="dropdown">
+                    <a href="#recursos">Recursos &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="../Squad 2 - Recursos/chamada.html">Chamada</a>
+                        <a href="../Squad 2 - Recursos/cronograma.html">Cronograma</a>
+                        <a href="../Squad 2 - Recursos/Localizacao.html">Localização</a>
+                    </div>
+                </div>
+            </nav>
         </div>
-        </div>
-      </nav>
-    </div>
-  </header>
+    </header>
 
   <section class="hero" data-aos="fade-up">
     <div class="hero-content">
@@ -51,15 +51,26 @@
   </section>
 
   <section class="contadores" data-aos="fade-up">
-    <div class="contador"><h2>+15</h2><p>Projetos realizados</p></div>
-    <div class="contador"><h2>+100</h2><p>Commits realizados</p></div>
-    <div class="contador"><h2>+250</h2><p>Horas de estudo</p></div>
+    <div class="contador">
+      <h2>+15</h2>
+      <p>Projetos realizados</p>
+    </div>
+    <div class="contador">
+      <h2>+100</h2>
+      <p>Commits realizados</p>
+    </div>
+    <div class="contador">
+      <h2>+250</h2>
+      <p>Horas de estudo</p>
+    </div>
   </section>
 
   <main>
     <section id="sobre" data-aos="fade-up">
       <h2>Sobre Nós</h2>
-      <p>Somos a Turma MIDS-78 da WEG. Uma equipe apaixonada por tecnologia e inovação. Durante nossa jornada no curso de Desenvolvimento de Sistemas, aprendemos a programar com Java, HTML, CSS e Git. Mas, acima de tudo, aprendemos a crescer juntos.</p>
+      <p>Somos a Turma MIDS-78 da WEG. Uma equipe apaixonada por tecnologia e inovação. Durante nossa jornada no curso
+        de Desenvolvimento de Sistemas, aprendemos a programar com Java, HTML, CSS e Git. Mas, acima de tudo, aprendemos
+        a crescer juntos.</p>
       <a href="./Squad 1 - Sobre/Sobre.html"><button class="leia-mais">Leia mais</button></a>
     </section>
 
@@ -90,14 +101,15 @@
 
   <section id="recursos" data-aos="fade-up">
     <h2>Recursos </h2>
-    <p>Encontre tudo o que você precisa em um só lugar: chamada atualizada, cronograma completo com aulas e atividades, e a localização da sala da turma. Acompanhe sua jornada com praticidade e organização.</p>
+    <p>Encontre tudo o que você precisa em um só lugar: chamada atualizada, cronograma completo com aulas e atividades,
+      e a localização da sala da turma. Acompanhe sua jornada com praticidade e organização.</p>
   </section>
 
 
   <div id="cookie-banner" class="cookie-banner">
     <div class="paragrafo">
       <p>Usamos cookies para melhorar sua experiência. Ao continuar navegando, você concorda com nossa política de
-      cookies.</p>
+        cookies.</p>
     </div>
     <div class="botoes">
       <button onclick="aceitarCookies()">Aceitar</button>
@@ -142,17 +154,17 @@
         <h2>Turma de Desenvolvimento de Sistemas - 2025</h2>
         <p class="footer-frase">"Não é só um curso, é o começo da nossa história na tecnologia."</p>
       </div>
-      
+          
       <div class="footer-links">
         <h3>Links úteis</h3>
         <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="../Squad 1 - Sobre/Sobre.html">Sobre</a></li>
+          <li><a href="https://github.com/MIDS-78" target="_blank">Projetos</a></li>
+          <li><a href="../Squad 3 - Contato/Contato.html">Contato</a></li>
         </ul>
       </div>
-      
+
       <div class="footer-social">
         <h3>Redes sociais</h3>
         <a href="https://github.com/MIDS-78" target="_blank" aria-label="GitHub">
@@ -163,10 +175,12 @@
         </a>
       </div>
     </div>
-    
+
     <div class="footer-bottom">
-      <p>&copy; 2025 MIDS-78 | Todos os direitos reservados<a href="../Squad 4 - Termos/Termos.html"> | Termos de Uso</a></p>
+      <p>&copy; 2025 MIDS-78 | Todos os direitos reservados<a href="../Squad 4 - Termos/Termos.html"> | Termos de
+          Uso</a></p>
     </div>
   </footer>
 </body>
+
 </html>
