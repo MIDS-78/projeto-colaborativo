@@ -1,88 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Termos de Uso</title>
-    <link rel="shortcut icon" href="../icone.ico" type="image/x-icon">
+    <title>Contato</title>
     <link rel="stylesheet" href="StyleContato.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../icone.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <a href="../index.html">
-            <h1><strong>MIDS 78</strong></h1>
-        </a>
-        <div class="navbar">
-            <a href="../#"><strong>Início</strong></a>
-            <a href="../#sobre"><strong>Sobre Nós</strong></a>
-            <a href="../#recursos"><strong>Recursos</strong></a>
-            <a href="../#contato"><strong>Contato</strong></a>
+        <div class="container">
+            <a href="./index.html"><img src="../imagens/logo.jpg" alt="Logo MIDS78"></a>
+            <nav class="navbar">
+                <a href="../index.html">Início</a>
+                <a href="../Squad 1 - Sobre/Sobre.html">Sobre Nós</a>
+                <a href="../Squad 3 - Contato/Contato.html">Contato</a>
+                <a href="../index.html#valores">Valores</a>
+                <div class="dropdown">
+                    <a href="#recursos">Recursos &#x25BC;</a>
+                    <div class="dropdown-content">
+                        <a href="../Squad 2 - Recursos/chamada.html">Chamada</a>
+                        <a href="../Squad 2 - Recursos/cronograma.html">Cronograma</a>
+                        <a href="../Squad 2 - Recursos/Localizacao.html">Localização</a>
+                    </div>
+                </div>
+            </nav>
         </div>
     </header>
-    
-    <div>
-        <h1><strong>Informações para Contato</strong></h1>
-    </div>
+      
+    <div class="page-container">
+        <h1>Contato:</h1>
 
-    <div>
-        <li>Email: contato@mids78.com</li>
-        <li>Telefone: (47) 914082478</li>
-        <li>GitHub: @turmamids78</li>
-        <li>Instagram: @turmamids78</li>
-    </div>
+        <div class="contato-wrapper">
+            <div class="form-section">
+                <p class="form-intro">Nos envie uma mensagem!</p>
+                <form action="https://formspree.io/f/mldbqape" method="POST">
+                    <div class="inputGroup">
+                        <input type="email" name="E-mail" id="email" autocomplete="off" required placeholder=" ">
+                        <label for="email">
+                            <span>E-mail</span>
+                        </label>
+                    </div>
 
-    <div>
-        <br>
-        <h2><strong>Nos envie uma mensagem!</strong></h2>
-    </div>
+                    <div class="inputGroup">
+                        <textarea name="Mensagem" id="mensagem" autocomplete="off" required placeholder=" " rows="5"></textarea>
+                        <label for="mensagem">
+                            <span>Mensagem</span>
+                        </label>
+                    </div>
 
-    <div class="formulario">
-    <form>
-        <input name="Nome" autocomplete="off" required />
-        <label for="Nome">
-          <span>Nome</span>
-        </label>
-      </form>
+                    <div>
+                        <button type="submit" class="submit-button">enviar</button>
+                    </div>
+                </form>
+            </div>
 
-    <form>
-    <form>
-        <input name="E-mail" autocomplete="off" required />
-        <label for="E-mail">
-         <span>E-mail</span>
-      </label>
-     </form>
-    
-     <form>
-        <div>
-            <input class="nome" type="text" id="Nome" name="Nome" placeholder="Digite seu nome">
+            <div class="info-section">
+                <div class="minha-caixa">
+                    <p>Email: turmamids78@gmail.com</p>
+                    <p>Telefone: (47) 914082478</p>
+                    <p>GitHub: @turmamids78</p>
+                    <p>Instagram: @turmamids78</p>
+                </div>
+            </div>
         </div>
-
-        <br>
-
-        <div>
-            <input class="email" type="text" id="email" name="email" placeholder="Digite seu email">
-        </div>
-
-        <br>
-
-        <div>
-            <input class="mensagem" type="text" id="Mensagem" name="Mensagem" placeholder="Digite sua mensagem">
-        </div>
-
-        <br>
-
-        <div>
-            <button class="botao">enviar</button>
-        </div>
-    </form>
     </div>
-
-    <footer>
-        <p>&copy; 2025 MIDS 78. Todos os direitos reservados. <a href="Termos.html">Termos de Uso.</a></p>
-        <p>Contato: contato@mids78.com</p>
-    </footer>
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-brand">
+            <img src="../imagens/logo.jpg" alt="Logo MIDS78">
+            <h2>Turma de Desenvolvimento de Sistemas - 2025</h2>
+            <p class="footer-frase">"Não é só um curso, é o começo da nossa história na tecnologia."</p>
+          </div>
+          
+          <div class="footer-links">
+            <h3>Links úteis</h3>
+            <ul>
+              <li><a href="../index.html">Início</a></li>
+              <li><a href="../Squad 1 - Sobre/Sobre.html">Sobre</a></li>
+              <li><a href="https://github.com/MIDS-78" target="_blank">Projetos</a></li>
+              <li><a href="../Squad 3 - Contato/Contato.html">Contato</a></li>
+            </ul>
+          </div>
+          
+          <div class="footer-social">
+            <h3>Redes sociais</h3>
+            <a href="https://github.com/MIDS-78" target="_blank" aria-label="GitHub">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            </a>
+            <a href="#" target="_blank" aria-label="Instagram">
+              <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" />
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; 2025 MIDS-78 | Todos os direitos reservados<a href="../Squad 4 - Termos/Termos.html"> | Termos de Uso</a></p>
+        </div>
+      </footer>
 
 </body>
 
