@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;
+    background-color: #f4f4f4;
+    color: #000;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+  }
+
+
+h1 {
+    color: #05377B;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.descricoes {
+    max-width: 900px;
+    margin: 30px auto 0 auto;
+    padding: 20px;
+    background-color: #f5faff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #181C1F;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tabela-cronograma {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-collapse: collapse;
+    border-radius: 8px;
+    position: relative;
+    background-color: white;
+    z-index: 100;
+    gap: 10px;
+    top: 5px;
+}
+
+.tabela-cronograma thead tr {
+    background-color: #05377B;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+
+.tabela-cronograma th,
+.tabela-cronograma td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.tabela-cronograma tbody tr:nth-child(even) {
+    background-color: #f5faff;
+}
+
+
+.tabela-cronograma tbody td:first-child {
+    font-weight: 600;
+    color: #32CD32;
+    text-align: center;
+    background-color: #e6f2e6;
+    white-space: nowrap;
+}
+
+.tabela-cronograma tbody td {
+    text-align: center;
+}
+
+
+@media (max-width: 700px) {
+    .tabela-cronograma thead {
+        display: none;
+    }
+
+    .tabela-cronograma,
+    .tabela-cronograma tbody,
+    .tabela-cronograma tr,
+    .tabela-cronograma td {
+        display: block;
+        width: 100%;
+    }
+
+    .tabela-cronograma tr {
+        margin-bottom: 15px;
+        border-bottom: 2px solid #05377B;
+    }
+
+    .tabela-cronograma td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+        border: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .tabela-cronograma td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        width: 45%;
+        padding-left: 15px;
+        font-weight: 700;
+        text-align: left;
+        color: #05377B;
+    }
+}
+
+.tabela-cronograma td.descanso:hover {
+    background-color: #d4f7d4;
+    color: #237623;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabela-cronograma td.poo:hover {
+    background-color: #cce0ff;
+    color: #05377B;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabela-cronograma td.iot:hover {
+    background-color: #fff0b3;
+    color: #b38f00;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabela-cronograma td.matematica:hover {
+    background-color: #ffd6d6;
+    color: #a80000;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabela-cronograma td.ingles:hover {
+    background-color: #d6f0ff;
+    color: #004080;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabela-cronograma td.frontend:hover {
+    background-color: #e6ffe6;
+    color: #239423;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabela-cronograma td.sistemas:hover {
+    background-color: #f0e6ff;
+    color: #5a00b3;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tabela-cronograma td.metodologias:hover {
+    background-color: #ffe6cc;
+    color: #b35a00;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.descricoes{
+    margin-bottom: 20px;
+}
